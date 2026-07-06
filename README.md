@@ -98,7 +98,3 @@ pnpm typecheck       # tsc --noEmit everywhere
 pnpm build           # turbo build (respects the dependency graph)
 pnpm --filter @scorecard/core test:watch   # auto-run tests on change
 ```
-
-## License
-
-MIT
