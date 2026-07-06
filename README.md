@@ -23,7 +23,7 @@ Or use from the command line:
 
 
 > [!WARNING]
-> This repository was vibecoded using Claude Code and should be considered ALPHA quality.
+> This repository was vibecoded using Claude Code and should be considered ALPHA quality. Yes, I understand the irony here :)
 
 ## What it measures
 
