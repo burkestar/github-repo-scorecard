@@ -10,5 +10,7 @@ coverage/
 .env.local
 *.sqlite
 *.sqlite-journal
+*.sqlite-shm
+*.sqlite-wal
 .wxt/
 web-ext-artifacts/
