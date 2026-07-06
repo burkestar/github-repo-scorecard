@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# gh extension entrypoint. Runs the bundled Node CLI.
+# For a zero-dependency release, replace this with a Bun-compiled binary via the
+# gh-extension-precompile action; this interpreted shim is the dev/default path.
+set -euo pipefail
+DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+exec node "$DIR/dist/index.js" "$@"

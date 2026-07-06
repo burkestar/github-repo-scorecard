@@ -1,0 +1,19 @@
+{
+  "name": "@scorecard/cli",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --clean",
+    "dev": "tsx src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@scorecard/core": "workspace:*",
+    "@scorecard/report": "workspace:*",
+    "@scorecard/schema": "workspace:*"
+  },
+  "devDependencies": {
+    "tsx": "^4.19.2"
+  }
+}

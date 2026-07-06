@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Scorecard Options</title>
+    <style>
+      :root { color-scheme: light dark; }
+      body {
+        font-family: system-ui, -apple-system, sans-serif;
+        max-width: 520px; margin: 40px auto; padding: 0 20px; line-height: 1.5;
+      }
+      h1 { font-size: 20px; }
+      label { display: block; font-weight: 600; margin: 18px 0 6px; }
+      input { width: 100%; padding: 8px 10px; font-size: 14px; border-radius: 8px;
+        border: 1px solid rgba(128,128,128,.4); background: transparent; color: inherit; }
+      .hint { font-size: 12px; color: #888; margin-top: 4px; }
+      button { margin-top: 22px; padding: 9px 16px; font-size: 14px; border-radius: 8px;
+        border: none; background: #2a78d6; color: #fff; cursor: pointer; }
+      #status { margin-left: 12px; font-size: 13px; color: #0ca30c; }
+    </style>
+  </head>
+  <body>
+    <h1>GitHub Repo Scorecard</h1>
+    <label for="server">Scorecard service URL</label>
+    <input id="server" type="url" placeholder="http://localhost:8787" />
+    <div class="hint">The backend that computes scorecards (Hono service in this repo).</div>
+
+    <label for="token">GitHub token (optional)</label>
+    <input id="token" type="password" placeholder="ghp_… — only needed for private repos" />
+    <div class="hint">Sent to the service as <code>x-github-token</code>; stored only in your browser.</div>
+
+    <div>
+      <button id="save">Save</button>
+      <span id="status"></span>
+    </div>
+
+    <script type="module" src="./main.ts"></script>
+  </body>
+</html>

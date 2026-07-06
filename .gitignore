@@ -1,0 +1,14 @@
+node_modules/
+dist/
+.output/
+.turbo/
+*.log
+*.tsbuildinfo
+.DS_Store
+coverage/
+.env
+.env.local
+*.sqlite
+*.sqlite-journal
+.wxt/
+web-ext-artifacts/
