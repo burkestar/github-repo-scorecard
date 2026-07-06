@@ -9,10 +9,24 @@ that all share one scoring engine:
 - **Browser extension** — adds an inline **Scorecard** tab on any github.com repo
 - **MCP server** — so coding agents can score repos programmatically
 
+Adds a scorecard tab to any Github repo:
+
+![alt text](docs/tab-in-browser.png)
+
+Click to see a detailed report in your browser:
+
+![alt text](docs/self-report-browser.png) 
+
+Or use from the command line:
+
+![alt text](docs/self-report-cli.png)
+
+
 > [!WARNING]
 > This repository was vibecoded using Claude Code and should be considered ALPHA quality.
 
 ## What it measures
+
 
 | Dimension | Source | Weight\* |
 |---|---|---|
